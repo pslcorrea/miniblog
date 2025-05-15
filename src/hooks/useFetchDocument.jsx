@@ -20,9 +20,8 @@ export const useFetchDocument = (docCollection, id) => {
       } catch (error) {
         console.log(error);
         setError(error.message);
+        setLoading(false);
       }
-
-      setLoading(false);
     };
 
     loadDocument();
