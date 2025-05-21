@@ -27,7 +27,7 @@ export const useFetchDocument = (docCollection, id) => {
     loadDocument();
   }, [docCollection, id]);
 
-  console.log(document);
+  // console.log(document);
 
   return { document, loading, error };
 };
